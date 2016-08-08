@@ -23,11 +23,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <h2>Welcome!</h2><br/>
-
-	<a href="<%= request.getContextPath() %>/login.jsp" >登录</a><br/>
-	<a href="<%= request.getContextPath() %>/list.jsp" >列表显示</a><br/>
-	<a href="<%= request.getContextPath() %>/add.jsp" >新增</a><br/>
-	<a href="<%= request.getContextPath() %>/del.jsp" >删除</a><br/>
+    <form action="<%= request.getContextPath() %>/LoginServlet " method="POST" name="loginForm" >
+    	用户名：<input type="text" name="first_name" /><br/>
+    	<input type="submit" value="提交"  /><br/>
+    </form>
   </body>
 </html>

@@ -3,13 +3,20 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<%@ page import= "factory.ConFactory"%>
+<%@ page import= "java.sql.Connection" %>
+<%@ page import= "java.sql.ResultSet" %>
+<%@ page import= "dao.FilmDAO" %>
+<%@ page import= "impl.FilmImp" %>
+<%@ page import= "entity.Film" %>
+<%@ page import= "java.io.IOException" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'login.jsp' starting page</title>
+    <title>toupdate page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,11 +30,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <h2>Welcome!</h2><br/>
-
-	<a href="<%= request.getContextPath() %>/login.jsp" >登录</a><br/>
-	<a href="<%= request.getContextPath() %>/list.jsp" >列表显示</a><br/>
-	<a href="<%= request.getContextPath() %>/add.jsp" >新增</a><br/>
-	<a href="<%= request.getContextPath() %>/del.jsp" >删除</a><br/>
+  
+  <h4>此功能尚未完成</h4>
+  
+  <%
+  	ResultSet rs = null;
+  	rs = (ResultSet)request.getSession().getAttribute("rs");
+  %>
+  <form action="<%=request.getContextPath() %>/UpdateSertlet" method="post" >
+  	
+  
+  </form>
+  
   </body>
 </html>

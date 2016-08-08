@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'login.jsp' starting page</title>
+    <title>My JSP 'fail.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,11 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <h2>Welcome!</h2><br/>
-
-	<a href="<%= request.getContextPath() %>/login.jsp" >登录</a><br/>
-	<a href="<%= request.getContextPath() %>/list.jsp" >列表显示</a><br/>
-	<a href="<%= request.getContextPath() %>/add.jsp" >新增</a><br/>
-	<a href="<%= request.getContextPath() %>/del.jsp" >删除</a><br/>
+    This is my JSP page. <br>
   </body>
 </html>
