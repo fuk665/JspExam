@@ -23,5 +23,3 @@ public interface FilmDAO {
 	public ResultSet FindLanguageByLanguage_ID (Connection con,Integer id) throws SQLException;
 	
 }
-
-
