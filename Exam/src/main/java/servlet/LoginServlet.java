@@ -20,7 +20,7 @@ import factory.ConFactory;
 public class LoginServlet extends HttpServlet {
 	
 	static{
-		System.out.println("我就是要看你有没有执行");
+	//	System.out.println("我就是要看你有没有执行");
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
