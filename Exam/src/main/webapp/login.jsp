@@ -23,7 +23,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    <form action="<%= request.getContextPath() %>/LoginServlet " method="POST" name="loginForm" >
+  <%=request.getAttribute("msg") %><br/>
+  
+    <form action="<%=request.getContextPath()%>/LoginServlet" method="post" >
     	用户名：<input type="text" name="first_name" /><br/>
     	<input type="submit" value="提交"  /><br/>
     </form>

@@ -24,7 +24,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <h5>登录成功！</h5><br/>
-    <%=request.getSession().getAttribute("flag") %>
+    <%=request.getSession().getAttribute("flag") %><br/>
+    <a href="<%=request.getContextPath()%>/index.jsp">返回首页</a>
     
   </body>
 </html>

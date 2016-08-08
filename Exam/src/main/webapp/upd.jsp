@@ -36,10 +36,31 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <%
   	ResultSet rs = null;
   	rs = (ResultSet)request.getSession().getAttribute("rs");
-  %>
-  <form action="<%=request.getContextPath() %>/UpdateSertlet" method="post" >
-  	
   
+  %>
+  <form action="<%=request.getContextPath()%>/UpdateSertlet" method="post" >
+  <table border="1px;" >
+  	<tr>
+  		<td>
+	 		Film_id:<%=rs%>
+		</td>
+	</tr>
+	<tr>
+  		<td>
+	 		Title:
+		</td>
+	</tr>
+	<tr>
+  		<td>
+	 		Description:
+		</td>
+	</tr>
+	<tr>
+  		<td>
+	 		Language_id:
+		</td>
+	</tr>
+  </table>
   </form>
   
   </body>

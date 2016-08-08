@@ -23,9 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
 
   </head>
   
@@ -33,7 +30,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <div align="center">
   <a href="<%=request.getContextPath() %>/index.jsp">返回主页面</a>
   </div> 
-    <form action="">
+   
     <table border="2px">
     <tr>
     <th>film_id</th>
@@ -65,6 +62,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	}
     %>
     </table>
-    </form>
+   
   </body>
 </html>

@@ -42,11 +42,11 @@ public class UpdateServlet extends HttpServlet {
 			
 			if(b>=0){
 				request.getSession().setAttribute("msg", "修改成功！");
-				rd = request.getRequestDispatcher("/del.jsp");
+				rd = request.getRequestDispatcher("/upd.jsp");
 				rd.forward(request, response);
 			}else{
 				request.getSession().setAttribute("msg", "修改失败！");
-				rd = request.getRequestDispatcher("/del.jsp");
+				rd = request.getRequestDispatcher("/upd.jsp");
 				rd.forward(request, response);
 			}
 			

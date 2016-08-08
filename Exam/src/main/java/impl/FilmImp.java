@@ -58,6 +58,7 @@ public class FilmImp implements FilmDAO {
 	public ResultSet FindFilm(Connection con, Integer id) throws SQLException {
 		String sql = "select * from film where film_id=?";
 		PreparedStatement prst = con.prepareCall(sql);
+		prst.setInt(1, id);
 		return prst.executeQuery();
 	}
 

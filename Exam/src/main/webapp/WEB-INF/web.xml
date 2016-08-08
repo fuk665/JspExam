@@ -1,10 +1,8 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  
+
   <servlet>
     <servlet-name>DeleteServlet</servlet-name>
     <servlet-class>servlet.DeleteServlet</servlet-class>
@@ -47,17 +45,16 @@
     <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
   
-  <!-- 
+  
   <filter>
   	<filter-name>LoginFilter</filter-name>
   	<filter-class>filter.LoginFilter</filter-class>
   </filter>
-  
   <filter-mapping>
   	<filter-name>LoginFilter</filter-name>
-  	<url-pattern>/*</url-pattern>
+  	<url-pattern>/*LoginServlet</url-pattern>
   </filter-mapping>
-   -->	
+  
   	
   	
 </web-app>

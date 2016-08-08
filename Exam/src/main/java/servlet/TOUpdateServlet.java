@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -37,6 +38,10 @@ public class TOUpdateServlet extends HttpServlet {
 			ResultSet rs = fd.FindFilm(con, film_id);
 			HttpSession session = request.getSession();
 			session.setAttribute("rs", rs);
+			RequestDispatcher rd = null;
+			rd = request.getRequestDispatcher("/upd.jsp");
+			rd.forward(request, response);
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
