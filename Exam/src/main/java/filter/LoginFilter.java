@@ -41,7 +41,7 @@ public class LoginFilter implements Filter {
 		
 		String flag = (String) session.getAttribute("flag");
 		
-		System.out.println("过滤器得到flag=="+flag);
+//		System.out.println("过滤器得到flag=="+flag);
 //		System.out.println("过滤器得到servletpath=="+servletPath);
 		if(servletPath!=null && ( servletPath.equals("/login.jsp")
 				|| servletPath.equals("/index.jsp") 
