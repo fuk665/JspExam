@@ -39,7 +39,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   %>
   <form action="<%=request.getContextPath()%>/UpdateSertlet" method="post" >
-
   <table border="1px;" >
   	<tr>
   		<td>
